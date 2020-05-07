@@ -69,12 +69,15 @@ value - (dict of strings) - either an offer id or transaction amount depending o
 
 ### Summary of the results
 - We analyzed the different datasets to predict the probablity to predict a user ability to complete an offer. In doing this, we ran a set of models to find the best fit. 
+- While looking at the feature importance we have noticed that the year that the user joined (tenure) and the amount of the reward was a huge factor in determining if the user would complete the offer.
 - In running logistic regression, LDA, KNN, CART, NB, and SVM, we notices that in all models the logistic regression had theb highest average accuracy when running the data in 10 split folds. In addition to this, we found that the All in one model including all of the offers such as bogo and discount had a marginally better accuracy than the bogo and discount model. 
--
+
 
 
 
 ### Future Refinement and Challenges
+- Currently the data is based on a small set off of offers listed in this database. Due to this there is a limited amount of factors that are being tested. For future evaluations, it'll be interesting to see a larger set of variables that may potentially impact. 
+- Since there are some nuances with the data currently, the modeling was done on users that have received the coupon and does not currently include users that have not received information of the coupon.
 
 ### Acknowledgements:
 - Kaggle
