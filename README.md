@@ -62,9 +62,19 @@ time (int) - time in hours since start of test. The data begins at time t=0
 value - (dict of strings) - either an offer id or transaction amount depending on the record
 ```
 
+### Methodology and Insights
+- Preprocessing was done to remove any informational that was not available. 
+- The offers included variations of bogo, discount, and informational offers. Most of the analysis was completed based on the aggregate data set as well as monetary discounts such as bogo and discount.
+- Most of the variables had low correlation and was not revmoed for the initial modeling. Informational offers had the largest negative correlation to the offer being completed.
 
 ### Summary of the results
-- 
+- We analyzed the different datasets to predict the probablity to predict a user ability to complete an offer. In doing this, we ran a set of models to find the best fit. 
+- In running logistic regression, LDA, KNN, CART, NB, and SVM, we notices that in all models the logistic regression had theb highest average accuracy when running the data in 10 split folds. In addition to this, we found that the All in one model including all of the offers such as bogo and discount had a marginally better accuracy than the bogo and discount model. 
+-
+
+
+
+### Future Refinement and Challenges
 
 ### Acknowledgements:
 - Kaggle
