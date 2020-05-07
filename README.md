@@ -74,10 +74,12 @@ value - (dict of strings) - either an offer id or transaction amount depending o
 
 
 
-
 ### Future Refinement and Challenges
 - Currently the data is based on a small set off of offers listed in this database. Due to this there is a limited amount of factors that are being tested. For future evaluations, it'll be interesting to see a larger set of variables that may potentially impact. 
 - Since there are some nuances with the data currently, the modeling was done on users that have received the coupon and does not currently include users that have not received information of the coupon.
+
+### Blog:
+- https://medium.com/@jaemo.lee0204/how-to-tell-if-your-promotion-works-a-starbucks-story-a6e853576d2e
 
 ### Acknowledgements:
 - Kaggle
